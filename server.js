@@ -22,6 +22,6 @@ mongoose.connect(database.url, {
     process.exit();
 });
 
-
+require("./controllers/employee.controller.js")(app);
 app.listen(port);
 console.log("App listening on port : " + port);

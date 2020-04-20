@@ -1,3 +1,4 @@
+module.exports = app => {
 const Employee = require("../models/employee.model.js");
 //get all employee data from db
 app.get('/api/employees', function(req, res) {
@@ -74,3 +75,4 @@ app.delete('/api/employees/:employee_id', function(req, res) {
 			res.send('Successfully! Employee has been Deleted.');	
 	});
 });
+};
